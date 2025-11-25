@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/CSS/style.css">
+    <title>Interview Simulator</title>
+  </head>
+  <body text-align="justify">
+    <a href="/">
+      <img src="/static/CSS/images/head.png" width="100%">
+    </a>
+    <br>
+
+    {% block body %}
+    <br>
+    <div style="width:70%; text-align:justify; display:inline-block;">
+      <h2 style="font-size: 1em">What is this platform?</h2>
+      <br>
+      <p>
+        This platform provides a tool for job candidates looking for practice regarding interview questions.
+        Our platform allows the candidate to answer typical interview questions either by video or by text.
+        We have developed complex Deep Learning algorithms that analyze the results of the video or the text
+        and provide the candidate a summary of what our algorithm perceived, and how the candidate performed
+        compared to previous candidates.
+      </p>
+      <br>
+      <img src="/static/CSS/images/process.png" width="80%">
+      <br><br>
+
+      <h2 style="font-size: 1em">Why this project?</h2>
+      <br>
+      <p>
+        This project was developed as a final year project for CMR Institute of Technology.
+        The team worked for several months on the individual models and built this platform in the final month.
+        We used Python for model training, Flask for the web interface, and D3.js for visualization purposes.
+      </p>
+      <br><br>
+    </div>
+
+    <div style="width:70%; text-align:justify; display:inline-block;">
+      <h2 style="font-size: 1em">Who contributed?</h2>
+      <br>
+      <p>
+        The platform was developed by a team of contributors as part of the final year project.
+      </p>
+      <br><br>
+    </div>
+
+    <form>
+      <input type="button" value="Back" onclick="history.go(-1)">
+    </form>
+    <br>
+  </body>
+  {% endblock %}
+</html>
